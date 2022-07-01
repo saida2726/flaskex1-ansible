@@ -2,4 +2,6 @@ task:
 - name: clone repo
   git: https://github.com/anfederico/Flaskex'
   dest: /app
-
+- name: Install pip Requirments
+  pip: 
+    requirments: /app/requirements.txt  
